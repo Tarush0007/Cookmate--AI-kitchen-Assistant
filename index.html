@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookMate – Your AI kitchen companion 🍳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>CookMate 🍽️</h1>
+    <p class="subtitle"><b>Enter ingredients, choose preferences, and let AI cook up something amazing!</b></p>
+
+   
+    <textarea id="ingredients" placeholder="e.g., tomatoes, pasta, cheese"></textarea>
+
+   
+    <label for="cuisine"><b>Cuisine:</b></label>
+    <select id="cuisine">
+      <option value="">Any</option>
+      <option value="Indian">Indian</option>
+      <option value="Italian">Italian</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Mexican">Mexican</option>
+      <option value="French">French</option>
+    </select>
+
+
+    <label for="language"><b>Language:</b></label>
+    <select id="language">
+      <option value="">Select</option>
+      <option value="Hindi">Hindi</option>
+      <option value="English">English</option>
+      <option value="Italian">Italian</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Mexican">Mexican</option>
+      <option value="French">French</option>
+    </select>
+
+    
+    <label for="preference"><b>Preference</b>:</label>
+    <select id="preference">
+      <option value="">Any</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Non-Vegetarian">Non-Vegetarian</option>
+      <option value="Vegan">Vegan</option>
+    </select>
+
+    
+
+  
+    <button id="generateBtn"><b>🍳 Generate Recipe</b></button>
+
+    
+    <div id="loading" class="hidden">⏳ Cooking your recipe... 🍲</div>
+
+    
+    <div id="output" class="recipe-card"><b>Your recipe will appear here...</b></div>
+  </div>
+    <hr>
+
+  <script src="script.js"></script>
+</body>
+</html>
