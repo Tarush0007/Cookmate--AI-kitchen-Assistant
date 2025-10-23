@@ -1,5 +1,5 @@
 const GEMINI_API_KEY = "AIzaSyBGfwFELLCnUyk4nEWnVKpljXJOPnU3JoQ";           
-const HF_API_KEY = "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";     
+const HF_API_KEY = "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";     
 
 document.getElementById("generateBtn").addEventListener("click", async () => {
   const ingredients = document.getElementById("ingredients").value.trim();
@@ -125,6 +125,7 @@ function escapeHtml(s = "") {
           .replace(/"/g,"&quot;")
           .replace(/'/g,"&#039;");
 }
+
 
 
 
